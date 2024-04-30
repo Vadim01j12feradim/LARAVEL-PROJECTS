@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','index');
+
+
+Route::get('/item', function () {
+    // Your route logic here
+})->name('item');
